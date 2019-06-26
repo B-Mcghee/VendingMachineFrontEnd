@@ -39,7 +39,7 @@ AJAX request get all items
 function loadItems(){
 $.ajax({
   type: 'GET',
-  url: 'http://tsg-vending.herokuapp.com/items',
+  url: 'https://tsg-vending.herokuapp.com/items',
   success: function(items, status, xhr){
     $("#item-loop").html("");
     // var allHtml = "";
@@ -72,7 +72,7 @@ $("#purchase-button").click(function(){
 
         $.ajax({
           type: 'POST',
-          url: 'http://tsg-vending.herokuapp.com/money/' + inserted + '/item/'+itemNumber,
+          url: 'https://tsg-vending.herokuapp.com/money/' + inserted + '/item/'+itemNumber,
           success: function(coins,status, xhr){
             var quarters =coins.quarters +" quarter(s) ";
             var dimes = coins.dimes + " dime(s) ";

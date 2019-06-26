@@ -1,0 +1,73 @@
+<!Doctype>
+<html>
+  <head>
+    <title>Vending Machine</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Delius|Faster+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<div class="header col-12" >
+  <h1>Vending Machine</h1>
+</div>
+  <body>
+
+    <div class="container">
+      <div class="row">
+      <div class=" items col-sm-7 col-md-9">
+        <div class="row" id="item-loop">
+        </div>
+    </div>
+    <hr>
+      <div class=" money col-sm-5 col-md-3">
+        <div class="total-money">
+        <h2 class="text-lg-center" id="total-money">Total $ In</h2>
+        <input type="text" value= "0.00" class="form-control" id="money-inserted" readonly>
+        <div class="row">
+        <div class=" change col-sm-5 button" id="add-dollar">Add Dollar</div>
+
+        <!-- <button type="button" name="button" class=" change col-sm-5 coin" id="add-quarter">Add Quarter</button> -->
+        <div  class=" change col-sm-5 button" id="add-quarter">Add Quarter</div>
+
+        <div class=" change col-sm-5 button" id="add-dime">Add Dime</div>
+        <div class=" change col-sm-5 button" id="add-nickel">Add Nickel</div>
+        </div>
+      </div>
+        <div class="messages">
+          <h2 class="text-lg-center">Messages</h2>
+          <input type="text" class="form-control message-box" id="message-input" readonly>
+          <label>Item:</label><input type="text" class="item-message" id="item-number" readonly>
+          <div class="col-sm-12" id="purchase-button">Make Purchase</div>
+        </div>
+        <div class="change-return col-md-auto">
+          <h3 class="text-lg-center change-text">Change</h3>
+
+
+          <input type="text" id="change-return" class="align-self-center col-md-12" readonly>
+
+
+
+        </div>
+        </div>
+
+      </div>
+  </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/vendingMachine.js">
+
+
+
+    </script>
+  </body>
+</html>

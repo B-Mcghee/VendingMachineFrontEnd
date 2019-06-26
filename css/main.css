@@ -1,0 +1,257 @@
+
+
+body{
+  background-color: #A3181E;
+  margin: 0;
+  cursor:default;
+  font-family: Delius, serif;
+}
+.header{
+  text-align: center;
+
+  margin-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FFFFFF;
+  font-family: 'Faster One', sans-serif;
+
+}
+.header:hover{
+
+  /* background-image: linear-gradient(to top right, #a9a4a4, #A3181E); */
+  background-image: linear-gradient(to right,  rgba(169, 164, 164,1),rgba(169, 164, 164,0),rgba(163, 24, 30,.7));
+  transition: background-color 2s ease-in;
+  text-decoration: underline;
+
+}
+h1{
+  font-size: 5em;
+}
+
+p{
+    font-size: 15px;
+
+    background-color: #A3181E;
+    display: inline-block;
+    border-radius: 15px;
+    border:solid 1px black;
+    margin-top: 2px;
+    padding: 1px;
+    color: #fff;
+
+}
+
+
+
+/* .item-slots:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+} */
+.item-slots{
+  border: solid black 3px;
+  background-color: #a9a4a4;
+  height: 175px;
+  margin: 1px;
+  margin: 15px;
+  border-radius: 15px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 4px 7px black;
+  outline: none;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+
+
+}
+
+.item-slots:after{
+  content: "";
+ background: #878383;
+ display: block;
+ position: absolute;
+ padding-top: 300%;
+ padding-left: 350%;
+ margin-left: -20px!important;
+ margin-top: -120%;
+ opacity: 0;
+ transition: all 0.8s
+}
+
+
+
+.item-slots:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+/* .item-slots:hover{
+  background-color: #878383;
+
+} */
+.item-slots:active{
+  box-shadow: 0 5px #A3181E;
+  transform: translateY(4px);
+
+}
+#item-loop:hover{
+  cursor:pointer;
+}
+
+.total-money{
+  border-bottom: solid black 5px;
+  padding-bottom: 20px;
+}
+.change{
+
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: .6em;
+
+}
+#purchase-button{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: .8em;
+  background-color: #a9a4a4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 3px black;
+  outline: none;
+}
+
+
+
+.container{
+  width:100%;
+}
+.button{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-size: .6em;
+  border-radius: 5px;
+  width: 20px;
+  background-color: #a9a4a4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 2px 3px black;
+  outline: none;
+}
+.button:hover,
+#purchase-button:hover{
+  background-color: #878383
+}
+.button:active,
+#purchase-button:active{
+  box-shadow: 0 0px #A3181E;
+  transform: translateY(4px);
+}
+.messages{
+  margin-top: 10px;
+  border-bottom: solid black 5px;
+  padding-bottom: 20px;
+}
+.message-box{
+  margin-bottom: 20px;
+}
+.item-message{
+  margin-left: 20px;
+}
+.change-text{
+  margin-top: 15px;
+
+}
+
+/************
+media queries
+**********/
+
+@media only screen and (max-width: 992px) {
+  body {
+    /* background-color: yellow; */
+
+  }
+  .item-slots{
+    border: solid black 3px;
+    background-color: #a9a4a4;
+    height: 125px;
+    margin: 1px;
+    margin: 10px;
+    border-radius: 15px;
+
+  }
+  .change{
+    font-size: .7em;
+  }
+
+  .text-lg-center{
+    font-size: 15px;
+  }
+  #item-number{
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    /* background-color: lightblue; */
+
+  }
+  .item-slots{
+    border: solid black 2px;
+    background-color: #a9a4a4;
+    height: 175px;
+    border-radius: 15px;
+
+  }
+  #item-number{
+    width: 40%;
+  }
+  .text-lg-center{
+    font-size: 14px;
+  }
+  .change{
+    font-size: .6em;
+  }
+  #message-input{
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 576px) {
+  body {
+    /* background-color: green; */
+  }
+  .item-slots{
+    border: solid black 2px;
+    background-color: #a9a4a4;
+    height: 140px;
+    margin: 1px;
+    margin: 10px;
+    border-radius: 15px;
+
+  }
+  #vending-slots{
+    width: 60%;
+
+  }
+  #item-loop{
+    margin-left: 17%;
+  }
+  .change{
+    font-size: .8em;
+    text-align: center;
+    margin: auto 0;
+  }
+
+}

@@ -39,7 +39,7 @@ AJAX request get all items
 function loadItems(){
 $.ajax({
   type: 'GET',
-  url: ' http://tsg-vending.herokuapp.com/items',
+  url: ' https://tsg-vending.herokuapp.com/items',
   success: function(items, status, xhr){
     $("#item-loop").html("");
     // var allHtml = "";

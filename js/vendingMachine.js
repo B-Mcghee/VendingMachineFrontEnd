@@ -39,7 +39,7 @@ AJAX request get all items
 function loadItems(){
 $.ajax({
   type: 'GET',
-  url: 'https://localhost:8080/items',
+  url: 'http://localhost:8080/items',
   success: function(items, status, xhr){
     $("#item-loop").html("");
     // var allHtml = "";
